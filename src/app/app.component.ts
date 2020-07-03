@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppState } from './app-state.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'vainilla-redux';
+  constructor(public state: AppState) {
+    // ¿Como cancelo el request? puedes almacenar la subscription y cancelar en onDestroy
+    this.state.getProducts();
+  }
 }

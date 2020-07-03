@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -123,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "vainilla-redux"
+    }
+  },
+  "defaultProject": "vainilla-redux",
+  "cli": {
+    "analytics": "515d87fe-f79a-4f2c-8200-99d4b51cfc99"
+  }
 }

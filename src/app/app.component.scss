@@ -1,0 +1,15 @@
+.cards {
+  margin-top: 20px;
+
+  mat-card + mat-card {
+    margin-top: 20px;
+  }
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+::ng-deep .mat-card-header-text {
+  width: 100%;
+}

@@ -1,0 +1,8 @@
+<mat-list role="list">
+  <mat-list-item *ngFor="let product of data; let position = index">
+    <p class="icon-product" mat-line> {{ product }}</p>
+    <button mat-button>
+      <mat-icon fxFlexOrder="2" mat-list-icon (click)="removeFromList(position)">remove_circle_outline</mat-icon>
+    </button>
+  </mat-list-item>
+</mat-list>
